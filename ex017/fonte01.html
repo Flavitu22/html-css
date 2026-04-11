@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="favicon-f.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes</title>
+    <style>
+
+        @font-face {
+            font-family:"love";
+           src: url(fonts/love.ttf);
+            types: ("true type font");
+
+        }
+        /* Estilizando o meu botão*/
+        .vermelho{ 
+            background-color: rgba(9, 130, 236, 0.842); /* cor de fundo*/
+            color: white; /* cor do texto*/
+            padding: 12px 20px; /* espaçamento interno */
+            border: none; /* remover borda padrão */
+            border-radius: 8px; /* bordas aredondadas */
+            cursor: pointer; /* cursor de mão ao passar */
+            font-size: 16px; /* tamanho da fotnte*/
+            transition: background-color 3s ease;  /* animação suave*/
+        }
+
+                    /*  efeito ao passar o  mouse em cima do botão*/
+        .vermelho:hover{
+                background-color: rgb(43, 226, 150);
+        }
+
+        .verde{
+             background-color: rgba(190, 109, 11, 0.842); /* cor de fundo*/
+            color: white; /* cor do texto*/
+            padding: 12px 20px; /* espaçamento interno */
+            border: none; /* remover borda padrão */
+            border-radius: 8px; /* bordas aredondadas */
+            cursor: pointer; /* cursor de mão ao passar */
+            font-size: 16px; /* tamanho da fotnte*/
+            transition: background-color 3s ease;  /* animação suave*/
+        }
+        .verde:hover{
+            background-color: black;
+        }
+
+        .body{
+           margin: 0;
+           padding: 0;
+           text-align: center;
+           background: -moz-linear-gradient(to bottom, Green, blue);
+        }
+
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+            formula{
+                background-color: aqua;
+
+            }
+            h1{
+                font-family: love;
+            }
+            h2{
+                font-family:"love";
+                font-size: 43px;
+                text-align: center;
+
+            }
+            p{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+                         
+<div id="formula">
+         <img src="imagens/dino.avif" > 
+        <h1>Trabalhando com botões</h1>
+        <button class="vermelho" onclick="alert('violet!')" style="text-decoration: none; display: inline-block;" >whats is color ?
+        </button>
+    
+            <!-- botão que funciona como link-->
+             <a href="https://tse3.mm.bing.net/th/id/OIP.KfDbT43tKLlVHd8ncz6jngHaLh?rs=1&pid=ImgDetMain&o=7&rm=3" class="vermelho" style="text-decoration: none; display:inline-block ;"> ir para o site </a>
+        <button class="verde" onclick="alert('Green!')"> Whats is color ?</button>
+        <p> linls e semanticas que chamam botões e caixas de seleção </p>
+
+        <form >
+
+            <ul>
+                <li>email</li>
+            </ul>
+            <!-- Aqui você chama a caixa de preenchimento com o "input type="text"
+             a semantica "for " é para qual banco de dados cada preenchimento vai enviar os dados cadastrados. -->
+            <label for="t1">Email</label>
+            <input type="text" id="t1">
+            <label for="t2" id="t2"> Pais</label>
+            <input type="text" id="t2">
+            <input type="submit">
+               <br>
+            <label for="cars">Selecione um carro</label>
+            <select name="cars" id="movel">
+                <option value="chevete">Chevete</option>
+                <option value="monza">Monza</option>
+    
+            </select>
+    
+    
+
+
+
+
+
+
+
+                <!-- Este codigo chama uma seleção de semana-->
+            <label for="week"> botão enviar:</label>
+    <input type="button" id="week" name="week">
+                    <br>
+     <label for="--Checkbox">Caixa de seleção </label>
+    <input type="color" id="week" name="week">
+                        <br>
+     <label for="week">Selecionar data</label>
+    <input type="date" id="week" name="week">
+                        <br>
+     <label for="week">selecionar data e horas local</label>
+    <input type="datetime-local" id="week" name="week">
+                        <br>
+     <label for="week">Select a week:</label>
+                         
+    <input type="email" id="week" name="week">
+     <label for="week">Selecione um email</label>
+                         <br>
+    <input type="hidden" id="week" name="week">
+     <label for="week">Qual é esse</label>
+                         <br>
+    <input type="image" id="week" name="week">
+     <label for="week">Select a week:</label>
+                         <br>
+    <input type="month" id="week" name="week">
+     <label for="week">Select a week:</label>
+                         <br>
+    <input type="number" id="week" name="week">
+     <label for="week">selecione um numero </label>
+                         <br>
+    <input type="password" id="week" name="week">
+     <label for="week">Senha </label>
+                         <br>
+    <input type="radio" id="week" name="week">
+     <label for="week">Select a week:</label>
+                         <br>
+    <input type="range" id="week" name="week">
+     <label for="week">Select a week:</label>
+                         <br>
+    <input type="reset" id="week" name="week">
+     <label for="week">Select a semana:</label>
+    <input type="search" id="week" name="week">
+
+    
+                <!--Checkbox chama uma caixa de seleção-->
+                            <br>
+            <input type="checkbox"> Você aceita os termo descrito neste link ?
+        </form>
+    
+    
+    
+</div class="robo" background-color:blue violet> 
+
+        <h2>Texto sobre dinossauros</h2>
+        <p>Origem e Evolução
+Os dinossauros surgiram no período Triássico, há cerca de 230 milhões de anos. Eles pertencem ao clado Dinosauria e são divididos em dois grandes grupos: Saurischia (que inclui os dinossauros carnívoros, como o Tiranossauro Rex) e Ornithischia (que inclui dinossauros herbívoros, como o Tricerátops). Durante sua existência, os dinossauros evoluíram em uma variedade impressionante de formas e tamanhos, desde pequenos dinossauros do tamanho de um pássaro até gigantes como o Argentinosaurus, que podia pesar até 100 toneladas. 
+UOL
++3
+Características
+Os dinossauros apresentavam uma diversidade de características físicas. Alguns eram bípedes, enquanto outros eram quadrúpedes. Eles podiam ser herbívoros, carnívoros ou onívoros, adaptando-se a diferentes nichos ecológicos. Além disso, muitos dinossauros desenvolveram estruturas especiais, como chifres e cristas, que podem ter sido usadas para defesa ou exibição. 
+Wikipedia
++1
+Extinção
+A extinção dos dinossauros ocorreu no final do período Cretáceo, há cerca de 66 milhões de anos, e a teoria mais aceita para explicar esse evento é a queda de um asteroide na região do atual México, que causou mudanças climáticas drásticas e a destruição de habitats. Essa extinção em massa eliminou quase todas as espécies de dinossauros, exceto algumas que evoluíram para as aves que conhecemos hoje. 
+Sua Pesquisa
++3
+Legado
+Os dinossauros deixaram um legado duradouro na história da Terra. Através da paleontologia, os cientistas estudam fósseis para entender melhor a vida desses animais e como eles se adaptaram ao seu ambiente. Além disso, os dinossauros continuam a fascinar o público, inspirando filmes, livros e exposições em museus ao redor do mundo. 
+Sua Pesquisa
++1
+
+Em resumo, os dinossauros foram criaturas incríveis que dominaram a Terra por milhões de anos, e seu estudo continua a revelar segredos sobre a evolução e a extinção de espécies. Eles são um testemunho da diversidade da vida na Terra e da capacidade de adaptação dos seres vivos ao longo do tempo.</p>
+</body>
+</html>

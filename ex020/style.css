@@ -1,0 +1,38 @@
+body {
+    background-color: grey;
+    background-image: url(WhatsApp\ Image\ 2026-03-22\ at\ 21.22.50.jpeg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+h1 {
+   color: green;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+background-color: rgb(3, 112, 76);
+
+}
+
+li {
+    color: rgb(9, 106, 43);
+    display: flex;
+    text-decoration: none;
+   
+    float: left;
+    ;
+}
+
+li>a:hover {
+    color: rgb(7, 129, 129);
+}
+a{
+   align-content: end;
+    text-decoration: none;
+    padding: 4px;
+}
+

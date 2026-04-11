@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando_links</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            color: cornflowerblue;
+        }
+
+        a{
+            color: rgb(0, 255, 68);
+            font-weight:  bold;
+            text-decoration: none;
+        }
+        a:visited {
+            color: violet;
+        }
+        a:active {
+            color: teal;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: red;
+
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration:none ;
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1> Praticando links em pseudos-classes</h1>
+ <ul>
+      <li><a href="https://github.com/">Link para o GitHub</a> </li>
+    <li> <a href="https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w">Link para o YouTub</a> </li>
+    <li><a href="https://www.sp.senac.br/">Link para outro site</a> </li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segunda pagina de videos</title>
+    
+    
+    <style>
+    /* Estilo da div que agrupa os vídeos */
+    .video-container {
+        display: flex;              /* Layout flexível */
+        flex-wrap: wrap;            /* Quebra de linha automática */
+        gap: 15px;                  /* Espaço entre vídeos */
+        justify-content: center;    /* Centraliza os vídeos */
+        padding: 20px;
+        background-color: #1dbf08;
+        border-radius: 8px;
+    }
+
+    /* Estilo para cada vídeo */
+    .video-container iframe,
+    .video-container video {
+        width: 320px;
+        height: 180px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+        .video-container iframe,
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+   <image background-image='' type="image.jpeg"> aqui aparece uma imagem ?</image>
+</head>
+<body>
+
+
+
+
+
+ 
+    <h1>Aqui tenque estar algumas informações</h1>
+
+    <p>Teste de codigo com css</p>
+    <h2>Galeria de Vídeos</h2>
+
+<div class="video-container">
+    <!-- Vídeo do YouTube -->
+   
+
+    <!-- Outro vídeo do YouTube -->
+    <video controls loop>
+
+        <source src="videos/vela-ogv.ogv" type="video/ogv">
+
+            seu navegador não suporta o elemento de video.
+        
+        </video>
+    <iframe src="https://www.youtube.com/watch?v=6TGayGvvg1A" 
+            title="Outro vídeo" 
+            allowfullscreen>
+    </iframe>
+
+   
+</div>
+<p style="color: crimson;">Teste de cor no paragrafo</p>
+
+</html>
