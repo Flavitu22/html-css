@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Passero+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Passero+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Barrio', 'system-ui';
+    --fonte3: "Passero One", sans-serif;
+}
+   
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,23 +19,26 @@
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
-    
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--font2);
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     text-transform: uppercase;
+    font-size: 4em;
 }
 
 header > p {
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
     section {
@@ -32,6 +46,8 @@ header > p {
         padding-bottom: 10%;
         line-height: 2em;
         padding-left: 30px;
+        font-family: var(--fonte3);
+        font-size: 3vh;
     }
 
 
