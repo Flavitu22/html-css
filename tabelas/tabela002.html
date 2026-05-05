@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="../ex007/favicon-f.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../ex22/imagens/wallpaper006.jpg);
+
+        }
+            h1{
+                color: rgb(57, 74, 25);
+                text-align: center;
+                text-decoration: underline;
+            }
+            h2 {
+                color: rgba(201, 201, 13, 0.949);
+                text-align: center;
+
+            }
+            h2:hover {
+                color: green;
+            }
+        table {
+            width: 500px;
+            border-radius: 3px;
+            align-items: center;
+            margin: auto;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            
+            padding: 10px;
+            box-shadow: 2px 3px 3px rgb(140, 188, 67);
+            border-collapse: collapse;
+        }
+        
+          tbody > tr:nth-child(2n) {
+            background-color: rgb(222, 219, 3);
+          }
+        
+          thead > tr > th {
+            position: sticky;
+            top:0;
+            background-color: gray;
+          }
+        
+
+            td.num {
+            
+                text-align: right;
+            }
+        thead,tfoot {
+            background-color: grey;
+            color: white;
+        }
+        footer {
+            color: gold;
+            background-color: green;
+            color: goldenrod;
+            text-align: center;
+        }
+        footer>a:hover{
+    color: white;
+        }
+        caption {         /* caption é uma semantica para titulos de tabelas*/
+            font-size: 1.6em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Uso de tabelas Grandes</h1>
+        <!-- Anatomia de tabelas grandes
+            TABLE
+                tr td, th.
+            THEAR   (Semantica de cabeçalho)
+            tr, td, th
+            TBODY   (Semantica de corpo da tabelas)
+            tr, td th
+            TFOOT (Semantica de rodapé de tabelas)
+            tr, td , th
+        -->
+        
+
+            <h2> <a href="file:///C:/Users/Pc/Documents/pasta%20de%20estudos/html-css/tabelas/tabelas03.html" target="_blank">Agrupando tabelas</a></h2>
+        <table>
+                <caption> População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 55%;" > Estado</th>
+                    <th scope="col" style="width: 23%;"> Poulação</th>
+                    <th>% População</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num"> 46 081 801</td>
+                <td>21,59%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                </td>
+                <td class="num">21 393 441	</td>
+                <td>10,02%</td>
+            </tr>
+            <tr>
+                <td> Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+                <td>8,07%	</td>
+            </tr>
+            <tr>
+                <td> Bahia</td>
+                <td class="num"> 14 870 907</td>
+                <td>6,97%</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td class="num"> 	11 890 517</td>
+                <td>5,57%</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num"> 11 233 2631</td>
+                <td>5,26%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num"> 9 2562 007</td>
+                <td>4,48%</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num"> 9 268 836</td>
+                <td>4,34%</td>
+            </tr>
+            <tr>
+                <td >Pará</td>
+                <td class="num"> 8 711 196</td>
+                <td>4,08%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num"> 8 187 029</td>
+                <td>3,84%</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row"> Total de habitantes</th>
+                    <td>	12 324 957</td>
+                    <td> 100%</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur aliquid libero quam voluptatem obcaecati unde ut doloremque id? Accusamus consequatur eum, excepturi alias sed architecto nihil praesentium molestias vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a deleniti nobis molestiae minus sed illum consequatur dolorum, voluptates porro harum atque quibusdam tempora repudiandae voluptatibus unde sapiente perferendis nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ipsum eius corporis? Tenetur, harum! Magni iusto labore consequuntur architecto accusamus accusantium beatae earum, dolor nihil repellendus at sint illum praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet neque odit odio officia assumenda dolor, accusantium voluptatem iusto id quia architecto repellendus ipsa? Corrupti facere dicta doloribus consequatur neque!</p>
+    </main>
+    <footer> Tabela desenvolvida por <a href="htpps//:github.com/Flavitu22/" target="_blank" link="external">Flavitu22</a></footer>
+</body>
+</html>

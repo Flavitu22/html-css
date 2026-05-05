@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de tabelas</title>
+
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(88, 65, 5);
+            }
+            table{
+                border-collapse: collapse;                
+                width: 200px;
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+                text-align: center center;
+            }
+            
+           
+        </style>
+
+
+
+    <h1>Agrupando celulas de tabelas</h1>
+
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+                
+
+            </tr>
+            <tr>
+                <td rowspan="2">D</td>
+                <td>E</td>
+                <td rowspan="3">F</td>
+            </tr>
+
+            <tr>
+                
+               
+                <td colspan="">I</td>
+            </tr>
+            <tr>
+                
+                
+                <td colspan="3" >L</td>
+            </tr>
+            
+        </table>
+        <h2> Scoope</h2>
+        <p>
+            É uma semantíca que organiza sua tabela dizendo ao navegador se ela é um grupo de linhas ou colunas, em conjunto com rowspan ou colspan 
+            que definem qunatas colunas ou quantas linhas 
+            Podem ser usada para agrupar linhas de tabelas, entre titulos que cobrem uma ou mais linhas de dados.
+<br>
+             <p>Veja o exemplo da tabelas a cima. Sem a semantica de "Coldspan" o quadrado 'D' estária alinhado com a segunda linha da tabela seguindo sua naturalidade de "SCOPE" configurado por linhas ou colunas.</p>
+        </p>
+
+        <p>
+            <strong>
+                Proximo exemplo <a href="file:///C:/Users/Pc/Documents/pasta%20de%20estudos/html-css/tabelas/ex01/ex001.html">-- > exemplo</a>
+            </strong>
+        </p>
+    </main>
+</body>
+</html>
