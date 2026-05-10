@@ -34,6 +34,15 @@
             height: 400px;
             border: 2px solid black;
         }
+        .frame{
+            margin: auto;
+            margin: 3px red;
+            border: 2px solid green;
+
+        }
+        #frame1{
+            background-color: limegreen;
+        }
     </style>
 </head>
 <body>
@@ -54,9 +63,11 @@
         <h2> Semantica de frames</h2>
         <p> Para carregar alguma página des de um link voce dentro so seu ifram é necessário nomerar seu igrame com a tag 'name' Auxiliando o navegador a  indentificar onde será aberto o conteúdo do link</p>
     </main>
-            <iframe src="" name="iframe" srcdoc="<h1> Teste de Titulo e texto dentro do iframes</h1> "></iframe>
-                <p>infelizmente seu navegador não suporta essa aplicação</p>
-        </iframe  >
+            <div class="frame"  id="frame">
+                <iframe class="frame1" name="iframe" srcdoc="<h1> Teste de Titulo e texto dentro do iframes</h1> "></iframe>
+                    <p>infelizmente seu navegador não suporta essa aplicação</p>
+                        </iframe  >
+            </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit facilis quasi atque. Commodi voluptate nam recusandae perferendis fugit labore repellendus cupiditate reiciendis autem, debitis consequatur rem odit rerum delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at qui suscipit, odit laudantium architecto excepturi, officiis omnis nemo, ut sunt reprehenderit alias repellat enim facilis impedit accusamus voluptate unde!</p>
     <footer>
         <p>Rodapé (Footer) &copy; 2024 - Informações de contato e links úteis.</p>
